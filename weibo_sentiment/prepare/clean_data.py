@@ -56,7 +56,7 @@ def deletehttp_s(sentence):
 
 #移除所有不可见字符，除\n外
 def remove_invisible_chars(s):
-    str = ''.join([x for x in s if (x.isprintable()) or (x is '\n')])
+    str = ''.join([x for x in s if (x.isprintable()) or (x == '\n')])
     
     # str = ''
     # for x in s:
@@ -119,7 +119,8 @@ def clean_a_test(row):
     return cleaned_content
 
 def clean_text_batch(df,column_name="text"):
-
+    # drop nan
+    df = df.dropna(subset=[column_name])
     ht = HarvestText()
     CharTable = pyhanlp.JClass('com.hankcs.hanlp.dictionary.other.CharTable')
 
