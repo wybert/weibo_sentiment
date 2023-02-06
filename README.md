@@ -10,7 +10,21 @@
 
 -   Free software: MIT license
 -   Documentation: https://wybert.github.io/weibo_sentiment
-    
+
+## Requirements
+
+```bash
+mamba install -c conda-forge openjdk python=3.8 jpype1=0.7.0 -y
+```
+
+## Installation
+
+
+
+```bash
+pip install -e .
+```
+
 
 ## Features
 

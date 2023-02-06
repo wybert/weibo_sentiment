@@ -1,0 +1,4 @@
+harvesttext
+pyhanlp
+pandas
+loguru
