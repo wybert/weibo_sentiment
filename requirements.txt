@@ -2,3 +2,5 @@ harvesttext
 pyhanlp
 pandas
 loguru
+flask
+pytorch-pretrained-bert

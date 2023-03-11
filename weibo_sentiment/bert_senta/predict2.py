@@ -326,9 +326,10 @@ if __name__ == "__main__":
     # TODO: 
     need_processed = [item for item in os.listdir(args.input_path
                             ) if ".parquet" in item]
-    temp = [extrac_date(item) for item in need_processed]
-    files = pd.DataFrame(columns=["file_name","date"],data=zip(need_processed,temp))
-    files = files.sort_values("date")
+    # temp = [extrac_date(item) for item in need_processed]
+    # files = pd.DataFrame(columns=["file_name","date"],data=zip(need_processed,temp))
+    # files = files.sort_values("date")
+    files = pd.DataFrame(columns=["file_name"],data=need_processed)
     if args.first_n != 0:
         files = files[:args.first_n]
     elif args.last_n !=0:
