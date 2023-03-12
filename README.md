@@ -19,7 +19,16 @@ mamba install -c conda-forge openjdk python=3.8 jpype1=0.7.0 -y
 
 ## Installation
 
+Install git lfs first
 
+apt install git-lfs
+git lfs install
+
+clone the repo
+
+download the model,
+
+git lfs pull
 
 ```bash
 pip install -e .
